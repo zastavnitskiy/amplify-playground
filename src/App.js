@@ -7,6 +7,7 @@ import { withAuthenticator } from 'aws-amplify-react'; // or 'aws-amplify-react-
 
 Amplify.configure(awsconfig);
 
+
 function App() {
   return (
     <div className="App">
