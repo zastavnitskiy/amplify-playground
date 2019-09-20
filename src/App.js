@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
 import awsconfig from './aws-exports';
@@ -28,7 +27,25 @@ const addTodo = `mutation createTodo($name:String! $description: String!) {
   }
 }`
 
+const createOrder = `mutation createOrder($name:String! $description: String!) {
+  createOrder(input:{
+    name:$name
+    description:$description
+  }){
+    id
+    name
+    description
+  }
+}`
 
+
+
+// next:
+
+// create order mutation
+// update order mutation
+// delete order mutation
+// view all orders
 function App() {
 
   const todoMutation = async () => {

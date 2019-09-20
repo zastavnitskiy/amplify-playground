@@ -1,24 +1,26 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const getTodo = `query GetTodo($id: ID!) {
-  getTodo(id: $id) {
+export const getOrder = `query GetOrder($id: ID!) {
+  getOrder(id: $id) {
     id
     name
-    description
+    url
+    owner
   }
 }
 `;
-export const listTodos = `query ListTodos(
-  $filter: ModelTodoFilterInput
+export const listOrders = `query ListOrders(
+  $filter: ModelOrderFilterInput
   $limit: Int
   $nextToken: String
 ) {
-  listTodos(filter: $filter, limit: $limit, nextToken: $nextToken) {
+  listOrders(filter: $filter, limit: $limit, nextToken: $nextToken) {
     items {
       id
       name
-      description
+      url
+      owner
     }
     nextToken
   }

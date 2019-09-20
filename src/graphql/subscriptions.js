@@ -1,27 +1,30 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const onCreateTodo = `subscription OnCreateTodo {
-  onCreateTodo {
+export const onCreateOrder = `subscription OnCreateOrder($owner: String!) {
+  onCreateOrder(owner: $owner) {
     id
     name
-    description
+    url
+    owner
   }
 }
 `;
-export const onUpdateTodo = `subscription OnUpdateTodo {
-  onUpdateTodo {
+export const onUpdateOrder = `subscription OnUpdateOrder($owner: String!) {
+  onUpdateOrder(owner: $owner) {
     id
     name
-    description
+    url
+    owner
   }
 }
 `;
-export const onDeleteTodo = `subscription OnDeleteTodo {
-  onDeleteTodo {
+export const onDeleteOrder = `subscription OnDeleteOrder($owner: String!) {
+  onDeleteOrder(owner: $owner) {
     id
     name
-    description
+    url
+    owner
   }
 }
 `;

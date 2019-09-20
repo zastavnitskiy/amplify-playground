@@ -1,27 +1,30 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createTodo = `mutation CreateTodo($input: CreateTodoInput!) {
-  createTodo(input: $input) {
+export const createOrder = `mutation CreateOrder($input: CreateOrderInput!) {
+  createOrder(input: $input) {
     id
     name
-    description
+    url
+    owner
   }
 }
 `;
-export const updateTodo = `mutation UpdateTodo($input: UpdateTodoInput!) {
-  updateTodo(input: $input) {
+export const updateOrder = `mutation UpdateOrder($input: UpdateOrderInput!) {
+  updateOrder(input: $input) {
     id
     name
-    description
+    url
+    owner
   }
 }
 `;
-export const deleteTodo = `mutation DeleteTodo($input: DeleteTodoInput!) {
-  deleteTodo(input: $input) {
+export const deleteOrder = `mutation DeleteOrder($input: DeleteOrderInput!) {
+  deleteOrder(input: $input) {
     id
     name
-    description
+    url
+    owner
   }
 }
 `;
