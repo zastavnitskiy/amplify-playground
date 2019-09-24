@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { API, graphqlOperation } from "aws-amplify";
-import { listOrders } from "./graphql/queries";
-import * as mutations from "./graphql/mutations";
+import { listOrders } from "../graphql/queries";
+import * as mutations from "../graphql/mutations";
 import { Link } from "react-router-dom";
 // next:
 // create order mutation
